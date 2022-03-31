@@ -1,0 +1,651 @@
+<!-- Header -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>omgray.co</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body onload="checkTheme()">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="navbar">
+        <a class="navbar-brand" href="index.html">[omgray.co]</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            </ul>    
+            <div class="dropdown">
+                <button type="button" class="drop dropdown-toggle" data-toggle="dropdown">
+                  Portfolios
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="design.html">Design</a>
+                  <a class="dropdown-item" href="development.html">Development</a>
+                  <a class="dropdown-item" href="gallery.html">OMG</a>
+                </div>
+              </div>
+            <div class="theme">
+                <button class="drop" onclick="toggleTheme()">Change Theme</button>
+            </div>
+        </nav>
+<!-- End Header -->
+<!-- Gallery -->
+<div class="container-fluid gallery-content" onwheel="displayTop()">
+    <div class="container">
+    <div class="row justify-content-center">
+            <p class="gallery">Original Media Gallery</p>
+        </div>
+    <div class="row justify-content-center">
+    <p class="gallery-blurb">Check out a gallery of the various art series' I've created throughout the years!</p>
+    </div>
+    </div>
+    
+    <div class="col-sm-12 text-center">
+            <span class="tagline">Villains</span><span style="color:red; font-size:2rem;" class="new"> *new!</span>
+            <p class="description">Released: Fall 2021</p>
+             <p class="description">Everyone loves a hero, but no doubt villains are cooler. Here are portraits of some of my all time favorite anime villains plus their alternate forms. Note the plain backgrounds for the initial forms and a unique backdrop for the second forms. </p>
+         </div>
+         <div class="row justify-content-center">
+             <div class="col-md-3"><img src="images/vil1.png" alt="Freiza" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(1)"><p class="overlayText">Freiza</p></div></div><span class="imgBlurb">Freiza's original final form from the Dragonball series. But this isn't even his final, final form!
+                 <p><a href="images/vil1.png" target="_blank">See Full Size</a></p>
+             </span>
+              <div class="col-md-3"><img src="images/vil2.png" alt="Golden Freiza" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(2)"><p class="overlayText">Golden Freiza</p></div></div><span class="imgBlurb">Golden Freiza from the Dragonball Super era, complete with Dragonball style powerup aura. A very cool new form for a classic villain. 
+                 <p><a href="images/vil2.png" target="_blank">See Full Size</a></p>
+             </span> 
+             <div class="col-md-3"><img src="images/vil3.png" alt="Madara Uchiha (Edo Tensei)" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(3)"><p class="overlayText">Madara Uchiha (Edo Tensei)</p></div></div><span class="imgBlurb">Madara Uchiha from the Naruto series. Edo Tensei, or reanimation, is Madara's initial form when he was formally introduced in Naruto Shippuden. This technique brings back the dead as a reanimated body.
+                <p><a href="images/vil3.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/vil4.png" alt="Madara Uchiha (Rinne Tensei)" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(4)"><p class="overlayText">Madara Uchiha (Rinne Tensei)</p></div></div><span class="imgBlurb">Later on in the story, Madara Uchiha is brought back to life completely using Rinne Tensei, or Rinne Rebirth, to change his reanimated body to a real, living body. The Susano'o ribcage was added for a cool effect.
+                <p><a href="images/vil4.png" target="_blank">See Full Size</a></p>
+            </span> 
+            <div class="col-md-3"><img src="images/vil5.png" alt="Ulquiorra Cifer" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(5)"><p class="overlayText">Ulquiorra Cifer</p></div></div><span class="imgBlurb">Ulquiorra Cifer from the Bleach series. I didn't watch much Bleach growing up, but I was able to catch his fight against Ichigo.
+                <p><a href="images/vil5.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/vil6.png" alt="Ulquiorra Cifer (Segunda Etapa)" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(6)"><p class="overlayText">Ulquiorra Cifer (Segunda Etapa)</p></div></div><span class="imgBlurb">Segunda Etapa roughly means resurrection: second stage in Spanish. This technique, which only Ulquiorra can do, changes himself back to the original form of his tribe. 
+                <p><a href="images/vil6.png" target="_blank">See Full Size</a></p>
+            </span>     
+            <div class="col-md-3"><img src="images/vil7.png" alt="Kaido" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(7)"><p class="overlayText">Kaido</p></div></div><span class="imgBlurb">Kaido, from One Piece, is another villain I wasn't familiar with growing up. He's one of the four emporors of the world and, thus, one of the four most powerful characters in the series. 
+                <p><a href="images/07ph.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/vil8.png" alt="Kaido (Dragon Form)" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(8)"><p class="overlayText">Kaido (Dragon Form)</p></div></div><span class="imgBlurb">Kaido can transform himself into a dragon! As one of the Beast Pirates, Kaido ate the Uo Uo No Me devil fruit, which gives him the ability to partially or completely turn into a dragon. He can also create fire clouds that he can use as platforms.
+                <p><a href="images/vil8.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/vil9.png" alt="Tomura Shigaraki" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(9)"><p class="overlayText">Tomura Shigaraki</p></div></div><span class="imgBlurb">From the My Hero Academia series, Tomura Shigaraki. Quirk: Decay. He can disintegrate anything he touches with all five fingers. 
+                <p><a href="images/vil9.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/vil10.png" alt="Plus Ultra Shigaraki" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(10)"><p class="overlayText">Plus Ultra Shigaraki</p></div></div><span class="imgBlurb">This version of Shigaraki has technically not appeared in the anime yet. He's become so powerful here that he's even decaying the background! Hopefully this is not too much of a spoiler.  
+                <p><a href="images/vil10.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/vil11.png" alt="Hero Hunter Garou" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(11)"><p class="overlayText">Hero Hunter Garou</p></div></div><span class="imgBlurb">From One Punch Man, Garou the Hero Hunter comes through. Introduced in season 2 of One Punch Man, Garou has become a fan favorite. 
+                <p><a href="images/vil11.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/vil12.png" alt="Awakened Garou (Monster Form)" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(12)"><p class="overlayText">Awakened Garou (Monster Form)</p></div></div><span class="imgBlurb">This version of Garou has not appeared in the anime yet. There was no reference to go off of as far as color and only a few manga panels for the actual character. He really only recently appeared, so this may not be how he looks once he debus in the anime.
+                <p><a href="images/vil12.png" target="_blank">See Full Size</a></p>
+            </span>   
+         </div>
+                <hr>
+
+        <div class="col-sm-12 text-center">
+            <span class="tagline">2021 Playlist</span><span style="color:red; font-size:2rem;" class="new"> *new!</span>
+            <p class="description">Released: Summer 2021</p>
+             <p class="description">Wanna know what I've been listening to lately? Check out these recreations of hip hop albums released in 2021 that I've been listening to!</p>
+         </div>
+         <div class="row justify-content-center">
+             <div class="col-md-3"><img src="images/01cmiygl.png" alt="Call Me If You Get Lost" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(13)"><p class="overlayText">Call Me If You Get Lost</p></div></div><span class="imgBlurb">Recreation of the album cover for Tyler, The Creator's Call Me If You Get Lost album.
+                 <p><a href="images/01cmiygl.png" target="_blank">See Full Size</a></p>
+             </span>
+              <div class="col-md-3"><img src="images/02os.png" alt="The Off Season" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(14)"><p class="overlayText">The Off Season</p></div></div><span class="imgBlurb">Recreation of the album cover for J Cole's The Off Season album.
+                 <p><a href="images/02os.png" target="_blank">See Full Size</a></p>
+             </span> 
+             <div class="col-md-3"><img src="images/03c3.png" alt="Culture 3" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(15)"><p class="overlayText">Culture 3</p></div></div><span class="imgBlurb">Recreation of the album cover for Migos Culture 3 album.
+                <p><a href="images/03c3.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/04voth.png" alt="Voice Of The Heroes" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(16)"><p class="overlayText">Voice Of The Heroes</p></div></div><span class="imgBlurb">Recreation of the album cover for Lil Durk & Lil Baby's Voice Of The Heroes album.
+                <p><a href="images/04voth.png" target="_blank">See Full Size</a></p>
+            </span> 
+            <div class="col-md-3"><img src="images/05ex.png" alt="Exodus" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(17)"><p class="overlayText">Exodus</p></div></div><span class="imgBlurb">Recreation of the album cover for the late DMX's Exodus album. RIP DMX.
+                <p><a href="images/05ex.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/06thitvs.png" alt="Temporary Highs" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(18)"><p class="overlayText">Temporary Highs</p></div></div><span class="imgBlurb">Recreation of the album cover for Snoh Aalegra's Temporary Highs In The Violet Skies album.
+                <p><a href="images/06thitvs.png" target="_blank">See Full Size</a></p>
+            </span>     
+            <div class="col-md-3"><img src="images/07ph.png" alt="Planet Her" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(19)"><p class="overlayText">Planet Her</p></div></div><span class="imgBlurb">Recreation of the album cover for Doja Cat's Planet Her album.
+                <p><a href="images/07ph.png" target="_blank">See Full Size</a></p>
+            </span>          
+         </div>
+                <hr>
+
+        <div class="col-sm-12 text-center">
+            <span class="tagline">Weather App Backgrounds</span><span style="color:red; font-size:2rem;" class="new"> *new!</span>
+            <p class="description">Released: Spring 2021</p>
+             <p class="description">These are from-scratch landscape art created for the Weather app I devloped, which you can check out <a href="https://weatherlook.netlify.app/">here.</a></p>
+         </div>
+         <div class="row justify-content-center">
+             <div class="col-md-3"><img src="images/cloudy.png" alt="Cloudy Background" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(20)"><p class="overlayText">Cloudy Background</p></div></div><span class="imgBlurb">Background made for the weather application depicting a landscape with partly cloudy weather.
+                 <p><a href="images/cloudy.png" target="_blank">See Full Size</a></p>
+             </span>
+              <div class="col-md-3"><img src="images/clear.png" alt="Clear Background" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(21)"><p class="overlayText">Clear Background</p></div></div><span class="imgBlurb">Background made for the weather application depicting a landscape with clear skies at night.
+                 <p><a href="images/clear.png" target="_blank">See Full Size</a></p>
+             </span> 
+             <div class="col-md-3"><img src="images/overcast.png" alt="Overcast Background" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(22)"><p class="overlayText">Overcast Background</p></div></div><span class="imgBlurb">Background made for the weather application depicting a landscape with overcast clouds.
+                <p><a href="images/overcast.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/rain.png" alt="Rain Background" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(23)"><p class="overlayText">Rain Background</p></div></div><span class="imgBlurb">Background made for the weather application depicting a landscape with rainy weather.
+                <p><a href="images/rain.png" target="_blank">See Full Size</a></p>
+            </span> 
+            <div class="col-md-3"><img src="images/snow.png" alt="Snow Background" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(24)"><p class="overlayText">Snow Background</p></div></div><span class="imgBlurb">Background made for the weather application depicting a landscape with snowy weather.
+                <p><a href="images/snow.png" target="_blank">See Full Size</a></p>
+            </span>     
+ 
+         </div>
+                <hr>
+
+
+        <div class="col-sm-12 text-center">
+           <span class="tagline">VG Landscapes Series</span>
+           <p class="description">Released: Winter 2021</p>
+            <p class="description">Check out a series of landscape art inspired by many acclaimed video game series, such as Super Mario, The Legend of Zelda and much more!</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3"><img src="images/vglandscape1.png" alt="Hyrule Landscape" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(25)"><p class="overlayText">Hyrule Landscape</p></div></div><span class="imgBlurb">Recreation of the opening scene of The Legend of Zelda: Breath of the Wild, overlooking Hyrule from the Great Plateau. 
+                <p><a href="images/vglandscape1.png" target="_blank">See Full Size</a></p>
+            </span>        
+             <div class="col-md-3"><img src="images/vglandscape2.png" alt="Bionis Landscape" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(26)"><p class="overlayText">Bionis Landscape</p></div></div><span class="imgBlurb">Recreation of the Bionis Leg area from Xenoblade Chronicles; Gaur Plain in particular. 
+                <p><a href="images/vglandscape2.png" target="_blank">See Full Size</a></p>
+            </span> 
+            <div class="col-md-3"><img src="images/vglandscape3.png" alt="Crown Tundra Landscape" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(27)"><p class="overlayText">Crown Tundra Landscape</p></div></div><span class="imgBlurb">Recreation of the Galar Region from Pokemon Sword and Pokemon Shield. This area is from the DLC called Crown Tundra. The Galarian forms of the Legendary Birds gather at this tree.
+                <p><a href="images/vglandscape3.png" target="_blank">See Full Size</a></p>
+            </span>         
+
+        </div>
+        
+                <hr>
+
+        <div class="col-sm-12 text-center">
+            <span class="tagline">OMG Toons Series</span>
+            <p class="description">Released: Holiday 2020</p>
+            <p class="description">What would the OMG Ray logo look like in the style of some of the most widely acclaimed cartoons? This series aims to answer that question. Be sure to stay updated on this series; there may be more added to this in the future!</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3"><img src="images/toon1.png" alt="OMG Ray x Rugrats" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(28)"><p class="overlayText">OMG Ray x Rugrats</p></div></div><span class="imgBlurb">OMG Ray logo in the style of the Rugrats logo.
+                <p><a href="images/toon1.png" target="_blank">See Full Size</a></p>
+            </span>        
+            <div class="col-md-3"><img src="images/toon2.png" alt="OMG Ray x Hey Arnold" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(29)"><p class="overlayText">OMG Ray x Hey Arnold</p></div></div><span class="imgBlurb">OMG Ray logo in the style of the Hey Arnold logo.
+                <p><a href="images/toon1.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/toon3.png" alt="OMG Ray x Dexters Lab" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(30)"><p class="overlayText">OMG Ray x Dexters Lab</p></div></div><span class="imgBlurb">OMG Ray logo in the style of the Dexters Lab logo.
+                <p><a href="images/toon3.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/toon4.png" alt="OMG Ray x Adventure Time" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(31)"><p class="overlayText">OMG Ray x Adventure Time</p></div></div><span class="imgBlurb">OMG Ray logo in the style of the Adventure Time logo.
+                <p><a href="images/toon4.png" target="_blank">See Full Size</a></p>
+            </span>          
+            <div class="col-md-3"><img src="images/toon5.png" alt="OMG Ray x Steven Universe" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(32)"><p class="overlayText">OMG Ray x Steven Universe</p></div></div><span class="imgBlurb">OMG Ray logo in the style of the Steven Universe logo.
+                <p><a href="images/toon5.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/toon6.png" alt="OMG Ray x Regular Show" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(33)"><p class="overlayText">OMG Ray x Regular Show</p></div></div><span class="imgBlurb">OMG Ray logo in the style of the Regular Show logo.
+                <p><a href="images/toon6.png" target="_blank">See Full Size</a></p>
+            </span>
+        </div>
+
+        <hr>
+
+
+        <div class="col-sm-12 text-center">
+            <span class="tagline">Aback The World Turtle Series</span>
+            <p class="description">Released: Spring 2018 / Summer 2020</p>
+            <p class="description">This series explores a concept; what if the planet we lived on is actually a giant turtle? Aback The World Turtle depicts several locations in a fantasy style world with its own lore and story told through the images. There's a traveler in every picture, meant to be the point of immersion into the World Turtle as well as a showcase of scale. Capping the series is a world map with each location in relation to each other.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3"><img src="images/turtle1.png" alt="Magenta Plains" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(34)"><p class="overlayText">Magenta Plains</p></div></div><span class="imgBlurb">This piece depicts Magenta Plains. A traveler is depicted looking among the Plains on the turtles back. The turtles head is visible here.
+                <p><a href="images/turtle1.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/turtle2.png" alt="Palisades Complex" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(35)"><p class="overlayText">Palisades Complex</p></div></div><span class="imgBlurb">This piece takes us to the Turtles right leg, with the rest of the leg visible in the distance. This location is called Palisades Complex. 
+                <p><a href="images/turtle2.png" target="_blank">See Full Size</a></p>
+            </span> 
+            <div class="col-md-3"><img src="images/turtle3.png" alt="Spiral Valley" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(36)"><p class="overlayText">Spiral Valley</p></div></div><span class="imgBlurb">This piece takes us to the Turtles tail, in an area called Spiral Valley. Pack a jacket, this valley environment is freezing cold!
+                <p><a href="images/turtle3.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/turtle4.png" alt="Winter Hills" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(37)"><p class="overlayText">Winter Hills</p></div></div><span class="imgBlurb">This is Winter Hills, the highest point on the Turtles Back. None of the Turtles features are visible here besides the endless mountain range.
+                <p><a href="images/turtle4.png" target="_blank">See Full Size</a></p> </span>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3"><img src="images/turtle5.png" alt="Magic Sky" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(38)"><p class="overlayText">Magic Sky</p></div></div><span class="imgBlurb">Located within a hollow region of the Turtles Shell lies a city called Magic Sky. Here, the traveler is looking toward the city from a local park. 
+                <p><a href="images/turtle5.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/turtle6.png" alt="Utsukushii Basin" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(39)"><p class="overlayText">Utsukushii Basin</p></div></div><span class="imgBlurb">Another location within the Hollow Shell region. Utsukushii Basin, depicted in this piece, is not too far from Magic Sky. At night, expect the local flora to glow different hues.
+                <p><a href="images/turtle6.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/turtle7.png" alt="Yydra's Tongue" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(40)"><p class="overlayText">Yydra's Tongue</p></div></div><span class="imgBlurb">Inside the Mouth Region lies Yydra's Tongue, a massive cavelike area with plains and mountains in the distance.
+                <p><a href="images/turtle7.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/turtle8.png" alt="Blight Mountain Range" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(41)"><p class="overlayText">Blight Mountain Range</p></div></div><span class="imgBlurb">Atop the Turtles head is the Blight Mountain Range. The magma here is blue and corrosively electric. Floating islands loom in the distance. 
+                <p><a href="images/turtle8.png" target="_blank">See Full Size</a></p>
+            </span>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3"><img src="images/worldmap.png" alt="World Turtle Series World Map" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(42)"><p class="overlayText">World Turtle Series World Map</p></div></div><span class="imgBlurb">This map of Yydra, the World Turtle, shows the various locations in the series relative to each other. 
+                <p><a href="images/worldmap.png" target="_blank">See Full Size</a></p>
+            </span>       
+        </div>
+
+        <hr>
+        
+        <div class="col-sm-12 text-center">
+            <span class="tagline">Celebrity Portraits</span>
+            <p class="description">Released: Summer 2018</p>
+            <p class="description">A slew of portraits made for certain celebrities either inspired by their music or role in the culture. These were never meant to be part of a series, but were appended when I realized how many portraits I've done over the years. </p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3"><img src="images/portrait1.png" alt="Tyler The Creator Portrait" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(43)"><p class="overlayText">Tyler The Creator Portrait</p></div></div><span class="imgBlurb">Recreation of Tyler, The Creators acclaimed IGOR album in the style of a portrait. 
+                <p><a href="images/portrait1.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/portrait2.png" alt="Summer Walker Portrait" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(44)"><p class="overlayText">Summer Walker Portrait</p></div></div><span class="imgBlurb">Highly stylized portrait of Summer Walker, meant to reflect the playfullness and jazzy tone of her music. 
+                <p><a href="images/portrait2.png" target="_blank">See Full Size</a></p>
+            </span> 
+            <div class="col-md-3"><img src="images/portrait3.png" alt="Roddy Rich Portrait" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(45)"><p class="overlayText">Roddy Rich Portrait</p></div></div><span class="imgBlurb">A depiction of Roddy Rich in a 3/4ths profile view. 
+                <p><a href="images/portrait3.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/portrait4.png" alt="Caleb Mclaughlin Portriat" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(46)"><p class="overlayText">Caleb Mclaughlin Portriat</p></div></div><span class="imgBlurb">Stylized portrait of Caleb Mclaughlin with a custom pattern. 
+                <p><a href="images/portrait4.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/portrait5.png" alt="Poetic J Portrait" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(47)"><p class="overlayText">Poetic J Portrait</p></div></div><span class="imgBlurb">A Portrait of Instagram commedian (and a good friend of mine) named Poetic J. 
+                <p><a href="images/portrait5.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/portrait6.png" alt="Ella Mai Portrait" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(48)"><p class="overlayText">Ella Mai Portrait</p></div></div><span class="imgBlurb">Portrait of Ella Mai in a more cartoony style. 
+                <p><a href="images/portrait6.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/portrait7.png" alt="Childish Gambino (This is America)" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(49)"><p class="overlayText">Childish Gambino (This is America)</p></div></div><span class="imgBlurb">A special piece inspired by and dedicated to Childish Gambino's viral hit song and music video "This Is America."
+                <p><a href="images/portrait7.png" target="_blank">See Full Size</a></p>
+            </span>
+        </div>
+
+        <hr>
+
+        <div class="col-sm-12 text-center">
+            <span class="tagline">Anime x Hip Hop Album Covers</span>
+            <p class="description">Released: Holiday 2017</p>
+            <p class="description">A short mashup series bringing together two of my passions; anime and hip hop! Stay tuned for updates on this series, it may be appended in the future!</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3"><img src="images/albums1.png" alt="Evolution (Pokemon x Kanye West)" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(50)"><p class="overlayText">Evolution (Pokemon x Kanye West)</p></div></div><span class="imgBlurb">A recreation of Kanye West's "Graduation" album using characters from Pokemon. 
+                <p><a href="images/albums1.png" target="_blank">See Full Size</a></p>
+            </span>        
+            <div class="col-md-3"><img src="images/albums2.png" alt="Naruto Was The Same (Naruto x Drake)" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(51)"><p class="overlayText">Naruto Was The Same (Naruto x Drake)</p></div></div><span class="imgBlurb">A recreation of Drake's "Nothing was the same" album using the character Naruto from Naruto Shippuden. 
+                <p><a href="images/albums2.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/albums3.png" alt="Man On Namek (DBZ x Kid Cudi)" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(52)"><p class="overlayText">Man On Namek (DBZ x Kid Cudi)</p></div></div><span class="imgBlurb">Recreation of Kid Cudi's "Man On The Moon" album using Goku from Dragonball Z and the planet Namek.
+                <p><a href="images/albums3.png" target="_blank">See Full Size</a></p>
+            </span>
+        </div>
+
+        <hr>
+
+        <div class="col-sm-12 text-center">
+            <span class="tagline">Mania Series</span>
+            <p class="description">Released: Fall 2017</p>
+            <p class="description">This series consists of redesigned screenshots from certain stages in hit 2017 video game Sonic Mania. Stages include Studiopolis Act 2, Press Garden Act 2 and Mirage Saloon Act 2. Each piece is named after the corresponding soundtrack that plays on the respective stage. </p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3"><img src="images/mania1.png" alt="Lights, Camera, Action!" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(53)"><p class="overlayText">Lights, Camera, Action!</p></div></div><span class="imgBlurb">Recreation of Act 2 of the Studiopolis stage; in particular, this is the area where you fight the boss of Act 2. 
+                <p><a href="images/mania1.png" target="_blank">See Full Size</a></p>
+            </span>        
+            <div class="col-md-3"><img src="images/mania2.png" alt="Blossom Haze" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(54)"><p class="overlayText">Blossom Haze</p></div></div><span class="imgBlurb">Recreation of Act 2 of the Press Garden stage; not meant to represent any point in the stage particularly, but the general environment as a whole. 
+                <p><a href="images/mania2.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/mania3.png" alt="Rogues Gallery" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(55)"><p class="overlayText">Rogues Gallery</p></div></div><span class="imgBlurb">Recreation of Act 2 of the Mirage Saloon stage. The 'Wanted' above the bar references three obscure Sonic characters, like in various points in the stage. 
+                <p><a href="images/mania3.png" target="_blank">See Full Size</a></p>
+            </span>
+        </div>
+
+        <hr>
+
+        <div class="col-sm-12 text-center">
+            <span class="tagline">Faces Series</span>
+            <p class="description">Released: Summer 2017</p>
+            <p class="description">The Faces series is a collection of original character designs that all share a specific trait; strange, cybernetic eyes. This series was created as an expression of ideas I had for original characters that I may use in the future. The name for each piece is loosly based on its color scheme (otherwise, completely random) so don't read too much into it. This was strictly for humor.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3"><img src="images/face1.png" alt="Eggplant" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(56)"><p class="overlayText">Eggplant</p></div></div><span class="imgBlurb">Faces series #1; Eggplant.
+                <p><a href="images/face1.png" target="_blank">See Full Size</a></p>
+            </span>        
+            <div class="col-md-3"><img src="images/face2.png" alt="Astreaus" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(57)"><p class="overlayText">Astreaus</p></div></div><span class="imgBlurb">Faces series #2; Astreaus. 
+                <p><a href="images/face2.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/face3.png" alt="Saturn" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(58)"><p class="overlayText">Saturn</p></div></div><span class="imgBlurb">Faces series #3; Saturn. 
+                <p><a href="images/face3.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/face4.png" alt="Meteor" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(59)"><p class="overlayText">Meteor</p></div></div><span class="imgBlurb">Faces series #4; Meteor. 
+                <p><a href="images/face4.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/face5.png" alt="Sweet Potato" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(60)"><p class="overlayText">Sweet Potato</p></div></div><span class="imgBlurb">Faces series #5; Sweet Potato. 
+                <p><a href="images/face5.png" target="_blank">See Full Size</a></p>
+            </span>
+            <div class="col-md-3"><img src="images/face6.png" alt="Grass" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(61)"><p class="overlayText">Grass</p></div></div><span class="imgBlurb">Faces series #6; Grass. 
+                <p><a href="images/face6.png" target="_blank">See Full Size</a></p>
+            </span>
+        </div>
+
+        <hr>
+
+        <div class="col-sm-12 text-center">
+            <span class="tagline">VGIRL (Video Games In Real Life)</span>
+            <p class="description">Released: Summer 2012</p>
+            <p class="description">The very first art series I've created! Using royalty free images and sprites I painstankenly recreated, this series is an expression of my love for retro gaming as well as pixel art, superimposed onto real-life locations.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3"><img src="images/vgirl1-tn.png" alt="Super Mario Kart IRL" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(62)"><p class="overlayText">Super Mario Kart IRL</p></div></div><span class="imgBlurb">Mario takes his kart to the woods! The motion blur effect was added to mimick velocity. 
+                <p><a href="images/vgirl1.jpg" target="_blank">See Full Size</a></p>
+            </span>        
+            <div class="col-md-3"><img src="images/vgirl2-tn.png" alt="Super Mario World IRL" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(63)"><p class="overlayText">Super Mario World IRL</p></div></div><span class="imgBlurb">An idea came into my head once; what if Super Mario World was played in third person? Using sprites I recreated myself and royalty free images of forests, I attempted to answer that question.  
+                <p><a href="images/vgirl2.jpg" target="_blank">See Full Size</a></p>
+            </span>        
+            <div class="col-md-3"><img src="images/vgirl3-tn.png" alt="Pokemon IRL" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(64)"><p class="overlayText">Pokemon IRL</p></div></div><span class="imgBlurb">Depiction of a lake area using a royalty free image of a lake and some redesigned Pokemon sprites. I was feeling nostalgic that day. 
+                <p><a href="images/vgirl3.jpg" target="_blank">See Full Size</a></p>
+            </span>        
+            <div class="col-md-3"><img src="images/vgirl4-tn.png" alt="The Legend of Zelda IRL" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(65)"><p class="overlayText">The Legend of Zelda IRL</p></div></div><span class="imgBlurb">A recreation of the very first cave area in the original Legend of Zelda title, where the old man just randonly gives you a sword. 
+                <p><a href="images/vgirl4.png" target="_blank">See Full Size</a></p>
+            </span>        
+            <div class="col-md-3"><img src="images/vgirl5-tn.png" alt="Super Mario Bros IRL" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(66)"><p class="overlayText">Super Mario Bros IRL</p></div></div><span class="imgBlurb">This piece came about while searching for stock images. I noticed the mountains in the back look awfully similar to the mountains from Super Mario Bros. As it turns out, 2D mario and company fit right in. 
+                <p><a href="images/vgirl5.jpg" target="_blank">See Full Size</a></p>
+            </span>        
+        </div>
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <!-- Close Button -->
+            <span onclick="closeModal()" class="close cursor">&times;</span>
+            <!-- Modal Content  -->
+            <div class="modal-content">
+                <div class="mySlide">
+                    <div class="numbersText">Villains</div>
+                    <img src="images/vil1.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Villains</div>
+                    <img src="images/vil2.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Villains</div>
+                    <img src="images/vil3.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Villains</div>
+                    <img src="images/vil4.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Villains</div>
+                    <img src="images/vil5.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Villains</div>
+                    <img src="images/vil6.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Villains</div>
+                    <img src="images/vil7.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Villains</div>
+                    <img src="images/vil8.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Villains</div>
+                    <img src="images/vil9.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Villains</div>
+                    <img src="images/vil10.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Villains</div>
+                    <img src="images/vil11.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Villains</div>
+                    <img src="images/vil12.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">2021 Playlist Series</div>
+                    <img src="images/01cmiygl.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">2021 Playlist Series</div>
+                    <img src="images/02os.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">2021 Playlist Series</div>
+                    <img src="images/03c3.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">2021 Playlist Series</div>
+                    <img src="images/04voth.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">2021 Playlist Series</div>
+                    <img src="images/05ex.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">2021 Playlist Series</div>
+                    <img src="images/06thitvs.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">2021 Playlist Series</div>
+                    <img src="images/07ph.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">WeatherApp Backgrounds Series</div>
+                    <img src="images/cloudy.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">WeatherApp Backgrounds Series</div>
+                    <img src="images/clear.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">WeatherApp Backgrounds Series</div>
+                    <img src="images/overcast.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">WeatherApp Backgrounds Series</div>
+                    <img src="images/rain.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">WeatherApp Backgrounds Series</div>
+                    <img src="images/snow.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">VG Landscapes Series</div>
+                    <img src="images/vglandscape1.png" alt="" class="modalImg">
+                </div>
+                 <div class="mySlide">
+                    <div class="numbersText">VG Landscapes Series</div>
+                    <img src="images/vglandscape2.png" alt="" class="modalImg">
+                </div> 
+                <div class="mySlide">
+                    <div class="numbersText">VG Landscapes Series</div>
+                    <img src="images/vglandscape3.png" alt="" class="modalImg">
+                </div> 
+                <div class="mySlide">
+                    <div class="numbersText">OMG Toons Series</div>
+                    <img src="images/toon1.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">OMG Toons Series</div>
+                    <img src="images/toon2.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">OMG Toons Series</div>
+                    <img src="images/toon3.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">OMG Toons Series</div>
+                    <img src="images/toon4.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">OMG Toons Series</div>
+                    <img src="images/toon5.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">OMG Toons Series</div>
+                    <img src="images/toon6.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">World Turtle Series</div>
+                    <img src="images/turtle1.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">World Turtle Series</div>
+                    <img src="images/turtle2.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">World Turtle Series</div>
+                    <img src="images/turtle3.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">World Turtle Series</div>
+                    <img src="images/turtle4.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">World Turtle Series</div>
+                    <img src="images/turtle5.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">World Turtle Series</div>
+                    <img src="images/turtle6.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">World Turtle Series</div>
+                    <img src="images/turtle7.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">World Turtle Series</div>
+                    <img src="images/turtle8.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">World Turtle Series</div>
+                    <img src="images/worldmap.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Celebrity Portraits</div>
+                    <img src="images/portrait1.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Celebrity Portraits</div>
+                    <img src="images/portrait2.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Celebrity Portraits</div>
+                    <img src="images/portrait3.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Celebrity Portraits</div>
+                    <img src="images/portrait4.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Celebrity Portraits</div>
+                    <img src="images/portrait5.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Celebrity Portraits</div>
+                    <img src="images/portrait6.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Celebrity Portraits</div>
+                    <img src="images/portrait7.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Hip Hop x Anime Album Covers</div>
+                    <img src="images/albums1.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Hip Hop x Anime Album Covers</div>
+                    <img src="images/albums2.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Hip Hop x Anime Album Covers</div>
+                    <img src="images/albums3.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Mania Series</div>
+                    <img src="images/mania1.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Mania Series</div>
+                    <img src="images/mania2.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Mania Series</div>
+                    <img src="images/mania3.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Faces Series</div>
+                    <img src="images/face1.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Faces Series</div>
+                    <img src="images/face2.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Faces Series</div>
+                    <img src="images/face3.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Faces Series</div>
+                    <img src="images/face4.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Faces Series</div>
+                    <img src="images/face5.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">Faces Series</div>
+                    <img src="images/face6.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">VGIRL (Video Games In Real Life)</div>
+                    <img src="images/vgirl1.jpg" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">VGIRL (Video Games In Real Life)</div>
+                    <img src="images/vgirl2.jpg" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">VGIRL (Video Games In Real Life)</div>
+                    <img src="images/vgirl3.jpg" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">VGIRL (Video Games In Real Life)</div>
+                    <img src="images/vgirl4.png" alt="" class="modalImg">
+                </div>
+                <div class="mySlide">
+                    <div class="numbersText">VGIRL (Video Games In Real Life)</div>
+                    <img src="images/vgirl5.jpg" alt="" class="modalImg">
+                </div>
+                <!-- Controls  -->
+                <a class="prev" href="#" onclick="plusSlides(-1)">&#10094;</a> 
+                <a class="next" href="#" onclick="plusSlides(1)">&#10095;</a> 
+                <!-- Caption -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                    <p id="blurb"></p>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+<!-- End Gallery -->
+
