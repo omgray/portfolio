@@ -1,191 +1,112 @@
+<!-- Header -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>omgray.co</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 </head>
-<body>
-    <nav class="navbar navbar-expand-md">
-        <div class="col-md-3 logo">
-            <a href="#"><img src="images/logo.png" alt="" width="35%"></a>
-        </div>
-        <div class="col-md-9 nav">
-            <ul class="navbar-nav ml-auto d-none d-md-flex">
-                <li class="navbar-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="navbar-item"><a href="#" class="nav-link">Gallery</a></li>
-                <li class="navbar-item"><a href="#" class="nav-link">Projects</a></li>
-                <li class="navbar-item"><a href="#" class="nav-link">Links</a></li>
-            </ul>
-        </div>
-        <div class="col-md-9 nav">
-            <ul class="navbar-nav ml-auto mr-auto d-block d-md-none d-lg-none d-xl-none">
-                <li class="navbar-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="navbar-item"><a href="#" class="nav-link">Gallery</a></li>
-                <li class="navbar-item"><a href="#" class="nav-link">Projects</a></li>
-                <li class="navbar-item"><a href="#" class="nav-link">Links</a></li>
-            </ul>
+<body onload="checkTheme()">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="navbar">
+    <a class="navbar-brand" href="index.html">[omgray.co]</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        </ul>    
+        <div class="dropdown">
+            <button type="button" class="drop dropdown-toggle" data-toggle="dropdown">
+              Portfolios
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="design.html">Design</a>
+              <a class="dropdown-item" href="development.html">Development</a>
+              <a class="dropdown-item" href="gallery.html">OMG</a>
+            </div>
+          </div>
+        <div class="theme">
+            <button class="drop" onclick="toggleTheme()">Change Theme</button>
         </div>
     </nav>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3"><img src="images/face1.png" alt="Faces Series #1" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(1)"><p class="overlayText">Faces Series #1</p></div></div><span class="imgBlurb">This piece is titled Eggplant. Conceptual Piece part of the Faces series. </span>        
-            <div class="col-md-3"><img src="images/face2.png" alt="Faces Series #2" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(2)"><p class="overlayText">Faces Series #2</p></div></div><span class="imgBlurb">This piece is titled Astraeus. Conceptual Piece part of the Faces series. </span>
-            <div class="col-md-3"><img src="images/face3.png" alt="Faces Series #3" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(3)"><p class="overlayText">Faces Series #3</p></div></div><span class="imgBlurb">This piece is titled Saturn. Conceptual Piece part of the Faces series. </span>
-            <div class="col-md-3"><img src="images/face4.png" alt="Faces Series #4" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(4)"><p class="overlayText">Faces Series #4</p></div></div><span class="imgBlurb">This piece is titled Meteor. Conceptual Piece part of the Faces series. </span>
+
+<!-- End Header -->
+<!-- Body -->
+<div class="container-fluid page-content">
+    <div class="header text-center">
+        <div class="header-text">
+          <h2>[omgray.co]</h2>
+          <p>Graphic designer, web developer & digital artist.</p>
+          <img src="images/logo.png" alt="" class="header-img">
+          <h3>"Waviest design in the ocean!"</h3>
         </div>
-        <div class="row">
-            <div class="col-md-3"><img src="images/face5.png" alt="Faces Series #5" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(5)"><p class="overlayText">Faces Series #5</p></div></div><span class="imgBlurb">This piece is titled Sweet Potato. Conceptual Piece part of the Faces series. </span>
-            <div class="col-md-3"><img src="images/face6.png" alt="Faces Series #6" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(6)"><p class="overlayText">Faces Series #6</p></div></div><span class="imgBlurb">This piece is titled Grass. Conceptual Piece part of the Faces series.  </span>
-            <div class="col-md-3"><img src="images/landscape3.png" alt="Downtown Cityscape" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(7)"><p class="overlayText">Downtown Cityscape</p></div></div><span class="imgBlurb">A cityscape depicting the illustrious nightlife of a fictional downtown locale. </span>
-            <div class="col-md-3"><img src="images/landscape4.png" alt="Stargazing Cityscape" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(8)"><p class="overlayText">Mania Series #3</p></div></div><span class="imgBlurb">A cityscape depicting a stargazer at a nearby beach. The cityscape takes heavy inspiration from the Downtown West Palm Beach skyline. </span>
-        </div>
-        <div class="row">
-            <div class="col-md-3"><img src="images/turtle1.png" alt="World Turtle Series #1" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(9)"><p class="overlayText">World Turtle Series #1</p></div></div><span class="imgBlurb">Concept series about life aback a planet sized turtle. Here, a traveler is depicted looking among the Majenta Plains on the turtles back. The turtles head is visible here.</span>
-            <div class="col-md-3"><img src="images/turtle2.png" alt="World Turtle Series #2" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(10)"><p class="overlayText">World Turtle Series #2</p></div></div><span class="imgBlurb">Part of the World Turtle series, this piece takes us to the Turtles left foot, with the right foot visible in the distance. This location is called Palisades Complex. </span> 
-            <div class="col-md-3"><img src="images/turtle3.png" alt="World Turtle Series #3" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(11)"><p class="overlayText">World Turtle Series #3</p></div></div><span class="imgBlurb">This piece takes us to the Turtles tail, in an area called Spiral Valley. Pack a jacket, this valley environment is freezing cold!</span>
-            <div class="col-md-3"><img src="images/turtle4.png" alt="World Turtle Series #4" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(12)"><p class="overlayText">World Turtle Series #4</p></div></div><span class="imgBlurb">This is Winter Hills, the highest point on the Turtles Back. None of the Turtles features are visible here besides the endless mountain range. </span>
-        </div>
-        <div class="row">
-            <div class="col-md-3"><img src="images/turtle5.png" alt="World Turtle Series #5" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(13)"><p class="overlayText">World Turtle Series #5</p></div></div><span class="imgBlurb">Located within a hollow region of the Turtles Shell lies a city called Magic Sky. Here, the traveler is looking toward the city from a local park. </span>
-            <div class="col-md-3"><img src="images/mania1.png" alt="Mania Series #1" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(14)"><p class="overlayText">Mania Series #1</p></div></div><span class="imgBlurb">The Mania series is based on the 2017 hit game Sonic Mania. This piece depicts Act 2 of the Stuidiopolis Stage. </span>
-            <div class="col-md-3"><img src="images/mania2.png" alt="Mania Series #2" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(15)"><p class="overlayText">Mania Series #2</p></div></div><span class="imgBlurb">The Mania series is based on the 2017 hit game Sonic Mania. This piece depicts Act 2 of the Press Garden Stage. </span>
-            <div class="col-md-3"><img src="images/mania3.png" alt="Mania Series #3" class="img-fluid img"> <div class="overlay" onclick="openModal();currentSlide(16)"><p class="overlayText">Mania Series #3</p></div></div><span class="imgBlurb">The Mania series is based on the 2017 hit game Sonic Mania. This piece depicts Act 2 of the Mirage Saloon Stage. </span>
-        </div>
-        <!-- Modal -->
-        <div id="myModal" class="modal">
-            <!-- Close Button -->
-            <span onclick="closeModal()" class="close cursor">&times;</span>
-            <!-- Modal Content  -->
-            <div class="modal-content">
-                <div class="mySlide">
-                    <div class="numbersText">1/16</div>
-                    <img src="images/face1.png" alt="" class="modalImg">
-                </div>
-                <div class="mySlide">
-                    <div class="numbersText">2/16</div>
-                    <img src="images/face2.png" alt="" class="modalImg">
-                </div>
-                <div class="mySlide">
-                    <div class="numbersText">3/16</div>
-                    <img src="images/face3.png" alt="" class="modalImg">
-                </div>
-                <div class="mySlide">
-                    <div class="numbersText">4/16</div>
-                    <img src="images/face4.png" alt="" class="modalImg">
-                </div>
-                <div class="mySlide">
-                    <div class="numbersText">5/16</div>
-                    <img src="images/face5.png" alt="" class="modalImg">
-                </div>
-                <div class="mySlide">
-                    <div class="numbersText">6/16</div>
-                    <img src="images/face6.png" alt="" class="modalImg">
-                </div>
-                <div class="mySlide">
-                    <div class="numbersText">7/16</div>
-                    <img src="images/landscape3.png" alt="" class="modalImg">
-                </div>
-                <div class="mySlide">
-                    <div class="numbersText">8/16</div>
-                    <img src="images/landscape4.png" alt="" class="modalImg">
-                </div>
-                <div class="mySlide">
-                    <div class="numbersText">9/16</div>
-                    <img src="images/turtle1.png" alt="" class="modalImg">
-                </div>
-                <div class="mySlide">
-                    <div class="numbersText">10/16</div>
-                    <img src="images/turtle2.png" alt="" class="modalImg">
-                </div>
-                <div class="mySlide">
-                    <div class="numbersText">11/16</div>
-                    <img src="images/turtle3.png" alt="" class="modalImg">
-                </div>
-                <div class="mySlide">
-                    <div class="numbersText">12/16</div>
-                    <img src="images/turtle4.png" alt="" class="modalImg">
-                </div>
-                <div class="mySlide">
-                    <div class="numbersText">13/16</div>
-                    <img src="images/turtle5.png" alt="" class="modalImg">
-                </div>
-                <div class="mySlide">
-                    <div class="numbersText">14/16</div>
-                    <img src="images/mania1.png" alt="" class="modalImg">
-                </div>
-                <div class="mySlide">
-                    <div class="numbersText">15/16</div>
-                    <img src="images/mania2.png" alt="" class="modalImg">
-                </div>
-                <div class="mySlide">
-                    <div class="numbersText">16/16</div>
-                    <img src="images/mania3.png" alt="" class="modalImg">
-                </div>
-                <!-- Controls  -->
-                <a class="prev" href="#" onclick="plusSlides(-1)">&#10094;</a> 
-                <a class="next" href="#" onclick="plusSlides(1)">&#10095;</a> 
-                <!-- Caption -->
-                <div class="caption-container">
-                    <p id="caption"></p>
-                    <p id="blurb"></p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 footer">
-                footer Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque sapiente in accusantium ipsum reiciendis harum dignissimos eaque ad incidunt placeat reprehenderit libero et facere cupiditate enim natus ullam, consequatur aliquam?
-            </div>
+      </div>
+    </div>
+
+        
+<div class="container links d-flex justify-content-center page-content">
+    <p class="link"><a href="design.html">Design</a></p>
+    <p class="link"><a href="development.html">Development</a></p>
+    <p class="link"><a href="gallery.html">OMG</a></p>
+    <p class="link" onclick="toggleTheme()"><a href="#">Retro!</a></p>
+
+</div>
+<!-- End Body -->
+<!-- BGImage -->
+<ul class="cb-slideshow">
+	<li>
+		<span>Image 01</span>
+	</li>
+	<li>
+        <span>Image 02</span>
+    </li>
+	<li>
+        <span>Image 03</span>
+    </li>
+    <li>
+        <span>Image 04</span>
+    </li>
+</ul>
+<!-- End BGImage -->
+<!-- 90s Version -->
+<div class="container mt-5 main text-center retro-content">
+    <h1 class="title">[omgray.co]</h1>
+    <p>Graphic designer, web developer & digital artist.</p>
+
+    <img src="images/logo.png" class="header-img">
+    <h3>"Waviest design in the ocean!"</h3>
+
+<div class="container links d-flex justify-content-center retro-content">
+    <div class="row">
+        <div class="col-sm-12 d-md-none">
+            <p class="link"><a href="design.html">Design</a></p>
+            <p class="link"><a href="development.html">Development</a></p>
+            <p class="link"><a href="gallery.html">OMG</a></p>
+            <p class="link" onclick="toggleTheme()"><a href="#">Modern!</a></p>
         </div>
     </div>
-    <script>
-        function openModal() {
-            document.getElementById('myModal').style.opacity = "1";
-            document.getElementById('myModal').style.visibility = "visible";
-            document.getElementById('myModal').style.transition = "all .3s"
-        }
-        function closeModal() {
-            document.getElementById('myModal').style.opacity = "0";
-            document.getElementById('myModal').style.visibility = "hidden";
-            document.getElementById('myModal').style.transition = "all .3s"
-        }
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        // Next/Previous controls 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName('mySlide'); // grab each of the 12 slides making the variable an array
-            var captionText = document.getElementById("caption"); // grab the element container to put the caption text
-            var blurbText = document.getElementById('blurb'); // grab the element container to put the blurb description
-            var altText = document.getElementsByClassName("img"); // grab the alt text from the image 
-            var blurbFull = document.getElementsByClassName('imgBlurb'); // grab the blurb/description 
-            // if n (whatever parameter is passed into the function) is larger than the total amount of slides,
-            // then reset the slide index to 1. This ensures that the modal controls always loop from the 
-            // last image back to the first
-            if (n>slides.length) {
-                slideIndex = 1;
-            }
-            if (n<1) {
-                slideIndex = slides.length;
-            }
-            // a for loop to iterate throught the slides array
-            for(i=0; i<slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex - 1].style.display = "block";
-            captionText.innerHTML = altText[slideIndex-1].alt;
-            blurbText.innerHTML = blurbFull[slideIndex-1].innerHTML;
-        }
-        // this function shows the current slide based on the value of n 
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-    </script>
-</body>
-</html>
+    <div class="d-none d-md-flex">
+        <p class="link"><a href="design.html">Design</a></p>
+        <p class="link"><a href="development.html">Development</a></p>
+        <p class="link"><a href="gallery.html">OMG</a></p>
+        <p class="link" onclick="toggleTheme()"><a href="#">Modern!</a></p>
+    </div>
+</div>
+    <p>Welcome to omgray.co, 90s version!</a></p>
+  <!-- End 90s Version -->
