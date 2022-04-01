@@ -340,6 +340,12 @@ body {
         max-width: 75%;
         height: auto;
     }
+    .subtag {
+        color: #ade9ff;
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 2;
+    }
     /* contact css */
     div.main {
         font-size: 20px;
