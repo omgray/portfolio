@@ -141,6 +141,9 @@ color: white;
 padding: 0 20%;
 }
 .gallery {
+background: linear-gradient(rgb(146, 0, 243),rgb(0, 247, 255), rgb(0, 231, 104));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 margin: 25px 0px;
 font-size: 4vw;
 font-family:'Times New Roman', Times, serif ;
