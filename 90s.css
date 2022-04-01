@@ -149,7 +149,9 @@ font-family:'Times New Roman', Times, serif ;
     text-align: center;
 }
 .tagline {
-color: #ade9ff;
+background: linear-gradient(rgb(146, 0, 243),rgb(0, 247, 255), rgb(0, 231, 104));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 font-size: 2.5rem;
 font-family: 'Times New Roman', Times, serif;
 font-weight: 700;
