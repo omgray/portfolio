@@ -74,3 +74,14 @@ function checkTheme() {
         console.log("checkTheme works")
     }
 }
+// function to randomize background images
+function rotateImg() {
+    function getRandomNumber(min, max) {
+        return Math.floor(Math.random() * (max - min) + min);
+    }
+    console.log("random number: " + getRandomNumber(1, 12));
+    document.getElementById('span1').style.backgroundImage="url(images/bgimage" + getRandomNumber(1,12) + ".png)";
+    document.getElementById('span2').style.backgroundImage="url(images/bgimage" + getRandomNumber(1,12) + ".png)";
+    document.getElementById('span3').style.backgroundImage="url(images/bgimage" + getRandomNumber(1,12) + ".png)";
+    document.getElementById('span4').style.backgroundImage="url(images/bgimage" + getRandomNumber(1,12) + ".png)";
+}
