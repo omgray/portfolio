@@ -80,8 +80,10 @@ function rotateImg() {
         return Math.floor(Math.random() * (max - min) + min);
     }
     console.log("random number: " + getRandomNumber(1, 12));
-    document.getElementById('span1').style.backgroundImage="url(images/bgimage" + getRandomNumber(1,12) + ".png)";
-    document.getElementById('span2').style.backgroundImage="url(images/bgimage" + getRandomNumber(1,12) + ".png)";
-    document.getElementById('span3').style.backgroundImage="url(images/bgimage" + getRandomNumber(1,12) + ".png)";
-    document.getElementById('span4').style.backgroundImage="url(images/bgimage" + getRandomNumber(1,12) + ".png)";
+    let m = 1;
+    for (let n = 0; n < 4; n++) {
+        // runs 4 times
+        document.getElementById(`span` + m).style.backgroundImage="url(images/bgimage" + getRandomNumber(1, 12) + ".png)";
+        m++;
+      }
 }
