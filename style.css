@@ -85,18 +85,18 @@ body {
     filter: opacity(75%);
     }
     .cb-slideshow li:nth-child(1) span { 
-    background-image: url(images/bgimage5.png);
+    /* background-image: url(images/bgimage5.png); */
     }
     .cb-slideshow li:nth-child(2) span { 
-    background-image: url(images/bgimage6.png);
+    /* background-image: url(images/bgimage6.png); */
     animation-delay: 5s; 
     }
     .cb-slideshow li:nth-child(3) span { 
-    background-image: url(images/bgimage7.png);
+    /* background-image: url(images/bgimage7.png); */
     animation-delay: 10s; 
     }
     .cb-slideshow li:nth-child(4) span { 
-    background-image: url(images/bgimage8.png);
+    /* background-image: url(images/bgimage8.png); */
     animation-delay: 15s; 
     }
     
